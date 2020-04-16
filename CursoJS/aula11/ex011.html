@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Vamos ver se você é estrangeiro</h1>
+    <p>Insira o país de onde você é:</p>
+
+    <input type="text" name="nacional" id="nacional">  
+    <input type="button" value="Verificar" onclick="verificar()">
+    
+    <div id = "res"> </div>
+
+    <script>
+        function verificar() {
+        var n = window.document.querySelector('input#nacional')
+        var resposta = window.document.querySelector('div#res')
+
+        res.innerHTML = `<p>Você nasceu em/no/na <strong>${n}</strong></p>`
+        
+        }
+    </script>
+</body>
+</html>
